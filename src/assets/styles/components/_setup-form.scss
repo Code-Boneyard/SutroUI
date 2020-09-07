@@ -1,0 +1,33 @@
+.setup-form {
+  color: white !important;
+  min-height: 80vh;
+  background-image: linear-gradient(135deg,
+      rgb(0, 0, 0) 0%,
+      rgb(43, 60, 85) 89%);
+      background-size: cover;
+
+  .md-field,
+  .mat-form-field,
+  .mat-label,
+  .mat-form-field-empty,
+  .mat-form-field-label {
+    color: white !important;
+  }
+
+  .mat-form-field-underline {
+    background-color: white !important;
+    color: white;
+  }
+
+  .mat-form-field-ripple {
+    background-color: white !important;
+    color: white;
+  }
+
+  .mat-input-element {
+    background-color: transparent !important;
+    height: 25px;
+    border-radius: 5px;
+    padding: 8px;
+  }
+}

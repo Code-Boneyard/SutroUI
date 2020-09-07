@@ -1,0 +1,45 @@
+.app-navbar {
+  position: relative;
+  z-index: 2;
+  max-width: 100vw !important;
+  margin: 0px;
+  padding: 0px;
+  min-height: 55px;
+  max-height: 55px;
+  background-image: linear-gradient(135deg,
+      rgb(21, 31, 75) 0%,
+      rgb(32, 144, 172) 89%);
+
+  mat-list-item {
+    color: white !important;
+  }
+
+  .navbar-container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .brand-container {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .left-container {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+
+  .right-container {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .icon-menu {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    margin-right: 10px;
+  }
+}

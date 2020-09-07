@@ -1,0 +1,43 @@
+.task-list-container {
+
+  .task-list-item:hover {
+    background-color: rgba(93, 149, 182, 0.212);
+    cursor: pointer;
+  }
+
+  .task-header {
+    padding-top: 3px;
+  }
+
+  .task-project {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0.8em;
+  }
+
+  .task-title {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+  }
+}
+
+.task-detail {
+  padding-top: 25px;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .task-detail {
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.task-tab {
+  padding: 25px;
+}

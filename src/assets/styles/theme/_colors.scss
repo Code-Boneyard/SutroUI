@@ -1,0 +1,13 @@
+$app-primary: mat-palette($mat-orange, 900);
+$app-accent: mat-palette($mat-deep-orange, 900);
+$app-warn: mat-palette($mat-red, 900);
+
+body {
+  --main-theme-color: #23548b;
+  --accent-theme-color: rgb(32, 144, 172);
+  ;
+}
+
+.mat-raised-button {
+    background-color: var(--main-theme-color)
+}

@@ -1,0 +1,21 @@
+.search-container {
+  display: block;
+  position: absolute !important;
+  top: 55px;
+  z-index: 2;
+  border-bottom-style: solid;
+  border-color: rgb(165, 165, 165);
+  border-width: thin;
+  background-color: white;
+  transition: all .5s;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 50vw;
+}
+
+.fade {
+  opacity: 0;
+  height: 10;
+  transition: all 2s;
+
+}
