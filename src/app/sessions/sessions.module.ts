@@ -8,10 +8,11 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { LegalComponent } from './legal/legal.component';
 import { SharedModule } from '../shared/shared.module';
+import { QuickStartComponent } from './quick-start/quick-start.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, NotFoundComponent, RecipesComponent, PrivacyComponent, LegalComponent,],
+  declarations: [HomeComponent, NotFoundComponent, RecipesComponent, PrivacyComponent, LegalComponent, QuickStartComponent,],
   imports: [
     CommonModule,
     SessionsRoutingModule,
