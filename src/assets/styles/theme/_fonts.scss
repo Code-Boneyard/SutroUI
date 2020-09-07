@@ -4,28 +4,28 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Nunito';
+  font-family: 'Quicksand', sans-serif;
 }
 
 p,
 a,
 li {
-  font-family: 'Lato';
+  font-family: 'Quicksand', sans-serif;
 }
 
 mat-card-title {
-  font-family: 'Lato';
+  font-family: 'Quicksand', sans-serif;
 }
 
 mat-list-item-content {
-  font-family: 'Lato'
+  font-family: 'Quicksand', sans-serif;
 }
 
 h1 {
@@ -52,5 +52,4 @@ h4 {
 h5 {
   font-size: 20;
   font-weight: 800;
-  text-transform: uppercase;
 }
