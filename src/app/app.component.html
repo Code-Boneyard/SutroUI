@@ -1,14 +1,16 @@
 <mat-toolbar>
-  <h1>
-    Sutro UI
-  </h1>
   <mat-nav-list fxLayout="row">
-    <mat-list-item>Getting Started</mat-list-item>
-    <mat-list-item>Docs</mat-list-item>
+    <mat-list-item routerLink="docs">
+      <h1>
+        Sutro UI
+      </h1>
+    </mat-list-item>
+    <mat-list-item routerLink="">Quick Start</mat-list-item>
+    <mat-list-item routerLink="docs">Docs</mat-list-item>
+    <mat-list-item routerLink="">Release Notes</mat-list-item>
   </mat-nav-list>
 </mat-toolbar>
 
-<div>
-  <h1>Suto</h1>
-  <p></p>
-</div>
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
