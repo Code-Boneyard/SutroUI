@@ -25,7 +25,6 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              
               "src/_redirects",
               "src/assets"
             ],
@@ -125,6 +124,10 @@
               "devServerTarget": "sutro-ui:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

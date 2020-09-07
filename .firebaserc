@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "sutro-ui": {
+      "hosting": {
+        "sutro-ui": [
+          "sutro-ui"
+        ]
+      }
+    }
+  }
+}

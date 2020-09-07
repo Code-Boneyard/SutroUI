@@ -12,6 +12,9 @@ import { FooterComponent } from './shared/nav/footer/footer.component';
 import { SystemModule } from './design/system/system.module';
 import { FoundationModule } from './design/foundation/foundation.module';
 import { GuidelinesModule } from './design/guidelines/guidelines.module';
+import { ComponentsModule } from './components/components.module';
+import { RecipesModule } from './recipes/recipes.module';
+import { PlanningModule } from './design/planning/planning.module';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { GuidelinesModule } from './design/guidelines/guidelines.module';
     SystemModule,
     FoundationModule,
     GuidelinesModule,
+    ComponentsModule,
+    RecipesModule,
+    PlanningModule,
   ],
   providers: [
 

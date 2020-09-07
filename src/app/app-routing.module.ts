@@ -1,3 +1,4 @@
+import { RecipesComponent } from './sessions/recipes/recipes.component';
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -23,8 +24,12 @@ const routes: Routes = [
     loadChildren: () => import('./releases/releases.module').then(m => m.ReleasesModule),
   },
   {
-    path: 'sessions',
-    loadChildren: () => import('./sessions/sessions.module').then(m => m.SessionsModule),
+    path: 'components',
+    loadChildren: () => import('./components/components.module').then(m => m.ComponentsModule),
+  },
+  {
+    path: 'recipes',
+    component: RecipesComponent
   },
   {
     path: '**',

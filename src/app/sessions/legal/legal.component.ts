@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  templateUrl: './quick-start.component.html',
+  templateUrl: './legal.component.html',
   styles: [
   ]
 })
-export class QuickStartComponent implements OnInit {
+export class LegalComponent implements OnInit {
 
   constructor() { }
 
