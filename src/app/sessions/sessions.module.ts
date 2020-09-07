@@ -7,13 +7,15 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { LegalComponent } from './legal/legal.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [HomeComponent, NotFoundComponent, RecipesComponent, PrivacyComponent, LegalComponent,],
   imports: [
     CommonModule,
-    SessionsRoutingModule
+    SessionsRoutingModule,
+    SharedModule
   ]
 })
 export class SessionsModule { }

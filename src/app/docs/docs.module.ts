@@ -2,12 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DocsRoutingModule } from './docs-routing.module';
+import { DocsComponent } from './docs/docs.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [DocsComponent],
   imports: [
     CommonModule,
+    SharedModule,
     DocsRoutingModule
   ]
 })
