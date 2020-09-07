@@ -12,6 +12,12 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/sutro-lib/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/sutro-lib/tsconfig.spec.json"
     }
 ]
 }

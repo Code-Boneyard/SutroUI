@@ -130,6 +130,46 @@
           "options": {}
         }
       }
+    },
+    "sutro-lib": {
+      "projectType": "library",
+      "root": "projects/sutro-lib",
+      "sourceRoot": "projects/sutro-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/sutro-lib/tsconfig.lib.json",
+            "project": "projects/sutro-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/sutro-lib/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sutro-lib/src/test.ts",
+            "tsConfig": "projects/sutro-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/sutro-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/sutro-lib/tsconfig.lib.json",
+              "projects/sutro-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "sutro-ui"
