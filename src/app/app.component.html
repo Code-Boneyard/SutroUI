@@ -1,7 +1,7 @@
 <div class="app-navbar">
   <mat-nav-list fxLayout="row">
     <mat-list-item routerLink="docs">
-      <h1 >
+      <h1>
         Sutro UI
       </h1>
     </mat-list-item>
@@ -10,7 +10,7 @@
     <mat-list-item routerLink="">Release Notes</mat-list-item>
   </mat-nav-list>
 </div>
-
-<router-outlet></router-outlet>
-
+<div class="page-layout" fxLayout="column">
+  <router-outlet></router-outlet>
+</div>
 <app-footer></app-footer>

@@ -9,6 +9,9 @@ import { DesignModule } from './design/design.module';
 import { ReleasesModule } from './releases/releases.module';
 import { SessionsModule } from './sessions/sessions.module';
 import { FooterComponent } from './shared/nav/footer/footer.component';
+import { SystemModule } from './design/system/system.module';
+import { FoundationModule } from './design/foundation/foundation.module';
+import { GuidelinesModule } from './design/guidelines/guidelines.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { FooterComponent } from './shared/nav/footer/footer.component';
     DocsModule,
     DesignModule,
     ReleasesModule,
-    SessionsModule
+    SessionsModule,
+    SystemModule,
+    FoundationModule,
+    GuidelinesModule,
   ],
   providers: [
 
