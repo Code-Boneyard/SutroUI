@@ -1,0 +1,46 @@
+<div class="footer-nav" style="min-height: 220px;" fxLayout="column wrap" fxLayoutAlign="start start">
+  <div class="footer-column" fxLayoutAlign="start start">
+    <div fxLayout="row">
+      <mat-nav-list style="margin-left: 20px; padding: 0px;top:0">
+        <h5 style="font-size: 14px;margin-left: 15px;font-weight: bolder;color:white;">CONTENT</h5>
+        <mat-list-item routerLink="/auth/projects" routerLinkActive="active">Projects</mat-list-item>
+        <mat-list-item routerLink="/auth/rates" routerLinkActive="active">Labor Rates </mat-list-item>
+        <mat-list-item routerLink="/auth/indices" routerLinkActive="active">Cost Indices</mat-list-item>
+        <mat-list-item routerLink="/auth/database" routerLinkActive="active">Database</mat-list-item>
+      </mat-nav-list>
+
+      <mat-nav-list style="margin-left: 20px; padding: 0px;top:0">
+        <h5 style="font-size: 14px;margin-left: 15px;font-weight: bolder;color:white;">PLATFORM</h5>
+        <mat-list-item routerLink="/auth/about" routerLinkActive="active">About</mat-list-item>
+        <mat-list-item routerLink="/auth/privacy" routerLinkActive="active">Privacy</mat-list-item>
+        <mat-list-item routerLink="/auth/contact" routerLinkActive="active">Contact </mat-list-item>
+      </mat-nav-list>
+
+      <mat-nav-list style="margin-left: 20px; padding: 0px;top:0" fxShow fxHide.lt-sm>
+        <h5 style="font-size: 14px;margin-left: 15px;font-weight: bolder;color:white;">RESOURCES</h5>
+        <mat-list-item routerLink="/auth/support" routerLinkActive="active">Support</mat-list-item>
+        <mat-list-item routerLink="/auth/docs" routerLinkActive="active">Docs</mat-list-item>
+        <mat-list-item>Search </mat-list-item>
+      </mat-nav-list>
+
+
+      <div style="margin-left: 60px;" fxShow fxHide.lt-md>
+        <div fxLayout="row">
+
+          <i onClick="window.open('//www.instagram.com/devmaxio')" class="fab fa-github fa-2x"
+            style="color: white;cursor: pointer;"></i>
+          <div class="icon-span"></div>
+          <i onClick="window.open('//www.linkedin.com/devmaxio')" class="fab fa-linkedin fa-2x"
+            style="color: white;cursor: pointer;"></i>
+          <div class="icon-span"></div>
+          <i onClick="window.open('//devmaxio.slack.com/')" class="fab fa-slack-hash fa-2x"
+            style="color: white;cursor: pointer;"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="copyright-container" fxLayoutAlign="start center">
+  <h5 style="font-weight: lighter;font-size: x-small;"> © 2020 Hollins Consulting, Inc. All Rights Reserved.</h5>
+</div>

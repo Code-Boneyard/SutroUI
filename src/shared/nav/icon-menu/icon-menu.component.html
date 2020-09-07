@@ -1,0 +1,41 @@
+<div class="icon-menu" fxLayout="row" fxLayoutAlign="end center">
+  <mat-nav-list fxLayout="row">
+    <button mat-icon-button routerLink="/auth/admin" *ngIf="auth.user$ | async as user" fxShow fxHide.lt-xs>
+      <i class="fal fa-cog" *ngIf="user.role == 'admin'"></i>
+    </button>
+    <button mat-icon-button *ngIf="(user$ | async)?.uid" routerLink="/auth/favorites" fxShow fxHide.lt-xs>
+      <i class="fal fa-heart"></i>
+    </button>
+    <button mat-icon-button *ngIf="(user$ | async)?.uid" routerLink="/auth/files" fxShow fxHide.lt-xs>
+      <i class="fal fa-folder"></i><span class="icon-badge">8</span>
+    </button>
+    <button mat-icon-button *ngIf="(user$ | async)?.uid" routerLink="/auth/notifications" fxShow fxHide.lt-xs>
+      <i class="fal fa-bell"></i><span class="icon-badge">8</span>
+    </button>
+    <button mat-icon-button *ngIf="(user$ | async)?.uid" routerLink="/auth/tasks" fxShow fxHide.lt-xs>
+      <i class="fal fa-check"></i><span class="icon-badge">11</span>
+    </button>
+    <button mat-icon-button [matMenuTriggerFor]="teamMenu" *ngIf="auth.user$ | async as user"
+      style="margin-bottom: 6px;margin-left:8px">
+      <ngx-avatar name="{{user.displayName}}" size="40">
+      </ngx-avatar>
+    </button>
+    <mat-list-item style="font-size: 12px !important;" routerLink="/auth/sessions/login"
+      *ngIf="(user$ | async)?.uid == null">LOGIN
+    </mat-list-item>
+    <mat-list-item style="font-size: 12px !important;" routerLink="/auth/sessions/signup"
+      *ngIf="(user$ | async)?.uid == null">REGISTER
+    </mat-list-item>
+  </mat-nav-list>
+</div>
+
+<mat-menu #teamMenu="matMenu" xPosition="before">
+  <button mat-menu-item routerLink="/auth/profile">
+    <i class="fal fa-user"></i>&nbsp; &nbsp; Profile</button>
+  <button mat-menu-item (click)="openSlack()">
+    <i class="fab fa-slack-hash"></i>&nbsp; &nbsp; Slack Channel</button>
+  <button mat-menu-item (click)="openDocumentation()">
+    <i class="fal fa-books"></i>&nbsp; &nbsp; Documentation</button>
+  <button mat-menu-item (click)="signOut()">
+    <i class="fal fa-sign-out"></i>&nbsp; &nbsp; Logout</button>
+</mat-menu>
