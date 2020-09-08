@@ -49,6 +49,7 @@
     "@nrwl/angular": "10.1.0",
     "echarts": "^4.9.0",
     "flex-layout": "^1.0.1",
+    "ng-packagr": "^10.1.0",
     "ngx-echarts": "^5.1.2",
     "rxjs": "~6.5.5",
     "zone.js": "^0.10.2"
@@ -87,7 +88,7 @@
   },
   "bit": {
     "env": {
-      "compiler": "bit.envs/compilers/angular@9.0.21"
+      "compiler": "bit.envs/angular@0.1.9"
     },
     "componentsDefaultDirectory": "components/{name}",
     "packageManager": "npm"

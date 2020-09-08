@@ -1,0 +1,9 @@
+{
+  "es2015": "fesm2015/bit-fade.js",
+  "esm5": "esm5/bit-fade.js",
+  "esm2015": "esm2015/bit-fade.js",
+  "fesm5": "fesm5/bit-fade.js",
+  "fesm2015": "fesm2015/bit-fade.js",
+  "module": "fesm5/bit-fade.js",
+  "typings": "bit-fade.d.ts"
+}
