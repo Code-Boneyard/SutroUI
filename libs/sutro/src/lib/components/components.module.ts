@@ -15,6 +15,9 @@ import { ShapesModule } from './shapes/shapes.module';
 import { DividerComponent } from './divider/divider.component';
 import { FormsModule } from './forms/forms.module';
 import { SheetsModule } from './sheets/sheets.module';
+import { MapsModule } from './maps/maps.module';
+import { GalleriesModule } from './galleries/galleries.module';
+import { AdsModule } from './ads/ads.module';
 
 
 
@@ -35,7 +38,10 @@ import { SheetsModule } from './sheets/sheets.module';
     CardsModule,
     ShapesModule,
     FormsModule,
-    SheetsModule
+    SheetsModule,
+    MapsModule,
+    GalleriesModule,
+    AdsModule
   ]
 })
 export class ComponentsModule { }

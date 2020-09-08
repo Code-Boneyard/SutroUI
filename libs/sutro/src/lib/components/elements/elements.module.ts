@@ -6,6 +6,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { HeroComponent } from './hero/hero.component';
 import { FeaturesComponent } from './features/features.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { FeedComponent } from './feed/feed.component';
 
 
 
@@ -15,7 +16,8 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
     CtaComponent,
     HeroComponent,
     FeaturesComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    FeedComponent
   ],
   imports: [
     CommonModule,
