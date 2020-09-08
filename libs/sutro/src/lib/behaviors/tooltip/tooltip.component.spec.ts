@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageLayoutComponent } from './page-layout.component';
+import { TooltipComponent } from './tooltip.component';
 
-describe('PageLayoutComponent', () => {
-  let component: PageLayoutComponent;
-  let fixture: ComponentFixture<PageLayoutComponent>;
+describe('TooltipComponent', () => {
+  let component: TooltipComponent;
+  let fixture: ComponentFixture<TooltipComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageLayoutComponent ]
+      declarations: [ TooltipComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PageLayoutComponent);
+    fixture = TestBed.createComponent(TooltipComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

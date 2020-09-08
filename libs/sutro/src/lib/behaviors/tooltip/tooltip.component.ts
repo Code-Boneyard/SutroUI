@@ -1,12 +1,12 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'sutro-modal-layout',
-  templateUrl: './modal-layout.component.html',
-  styleUrls: ['./modal-layout.component.css'],
+  selector: 'sutro-tooltip',
+  templateUrl: './tooltip.component.html',
+  styleUrls: ['./tooltip.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ModalLayoutComponent implements OnInit {
+export class TooltipComponent implements OnInit {
 
   constructor() { }
 

@@ -14,6 +14,7 @@ import { CardsModule } from './cards/cards.module';
 import { ShapesModule } from './shapes/shapes.module';
 import { DividerComponent } from './divider/divider.component';
 import { FormsModule } from './forms/forms.module';
+import { SheetsModule } from './sheets/sheets.module';
 
 
 
@@ -33,7 +34,8 @@ import { FormsModule } from './forms/forms.module';
     FiltersModule,
     CardsModule,
     ShapesModule,
-    FormsModule
+    FormsModule,
+    SheetsModule
   ]
 })
 export class ComponentsModule { }
