@@ -13,12 +13,45 @@ This project was generated using [Nx](https://nx.dev).
     "storybook": "yarn docs:json && start-storybook -p 6006"
     Build "build-storybook": "yarn docs:json && build-storybook"
 
-## Adding capabilities to your workspace
+## Bit.Dev
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+### Confirm you are logged into bit: 
+bit login
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+### Confirm you have Angular Complier installed for Bit:
+bit import bit.envs/compilers/angular --compiler 
 
+### Track bit module:
+add src/app/product-list  --main src/app/product-list/product-list.module.ts
+
+### Build the component:
+bit build
+
+### Update Versioning:
+bit tag --all 0.0.1
+
+### Export Bit Component to Bit.Dev:
+bit export sutro.angular-example-component
+
+Other Commands:
+### Install Bit.Dev CLI:
+npm install bit-bin -g
+
+### Confirm Bit Version:
+bit --version
+
+
+### Login to Bit: 
+bit login
+
+### List all Components:
+bit list
+
+### Initialize a Bit Workspace:
+bit init
+
+### Check Bit Status:
+bit status
 
 
 There are also many [community plugins](https://nx.dev/nx-community) you could add.

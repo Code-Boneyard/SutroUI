@@ -45,6 +45,7 @@
     "@angular/platform-browser": "^10.0.0",
     "@angular/platform-browser-dynamic": "^10.0.0",
     "@angular/router": "^10.0.0",
+    "@bit/sutro.angular-tutorial.product-list": "^1.0.0",
     "@nrwl/angular": "10.1.0",
     "echarts": "^4.9.0",
     "flex-layout": "^1.0.1",
@@ -83,5 +84,12 @@
     "ts-node": "~7.0.0",
     "tslint": "~6.0.0",
     "typescript": "~3.9.3"
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/angular@9.0.21"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
   }
 }

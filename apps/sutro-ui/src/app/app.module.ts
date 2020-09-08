@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule , CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +15,7 @@ import { GuidelinesModule } from './design/guidelines/guidelines.module';
 import { ComponentsModule } from './components/components.module';
 import { RecipesModule } from './recipes/recipes.module';
 import { PlanningModule } from './design/planning/planning.module';
+import { ProductListModule } from '@bit/sutro.angular-tutorial.product-list';
 
 @NgModule({
   declarations: [
