@@ -5,6 +5,7 @@ import { IconsModule } from './icons/icons.module';
 import { AnimationsModule } from './animations/animations.module';
 import { StylesModule } from './styles/styles.module';
 import { LayoutsModule } from './layouts/layouts.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   imports: [
@@ -12,7 +13,7 @@ import { LayoutsModule } from './layouts/layouts.module';
     ComponentsModule, 
     IconsModule, 
     AnimationsModule, 
-    StylesModule, LayoutsModule
+    StylesModule, LayoutsModule, SharedModule
   ],
 })
 export class SutroModule {}

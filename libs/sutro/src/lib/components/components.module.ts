@@ -8,6 +8,8 @@ import { ListsModule } from './lists/lists.module';
 import { GridsModule } from './grids/grids.module';
 import { DialogsModule } from './dialogs/dialogs.module';
 import { TablesModule } from './tables/tables.module';
+import { SharedModule } from '../shared/shared.module';
+import { FiltersModule } from './filters/filters.module';
 
 
 
@@ -15,6 +17,7 @@ import { TablesModule } from './tables/tables.module';
   declarations: [],
   imports: [
     CommonModule,
+    SharedModule,
     NavModule,
     InteractionsModule,
     ElementsModule,
@@ -22,7 +25,8 @@ import { TablesModule } from './tables/tables.module';
     ListsModule,
     GridsModule,
     DialogsModule,
-    TablesModule
+    TablesModule,
+    FiltersModule
   ]
 })
 export class ComponentsModule { }

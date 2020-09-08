@@ -4,6 +4,7 @@ import { CategoriesModule } from './categories/categories.module';
 import { FinancialModule } from './financial/financial.module';
 import { ConstructionModule } from './construction/construction.module';
 import { ManagementModule } from './management/management.module';
+import { SharedModule } from '../../shared/shared.module';
 
 
 
@@ -11,6 +12,7 @@ import { ManagementModule } from './management/management.module';
   declarations: [],
   imports: [
     CommonModule,
+    SharedModule,
     CategoriesModule,
     FinancialModule,
     ConstructionModule,
