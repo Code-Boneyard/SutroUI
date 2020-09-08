@@ -23,6 +23,7 @@
             "aot": true,
             "assets": [
               "apps/sutro-ui/src/favicon.ico",
+              "apps/sutro-ui/src/_redirects",
               "apps/sutro-ui/src/assets"
             ],
             "styles": [
@@ -180,6 +181,7 @@
             "aot": true,
             "assets": [
               "apps/sutro-themes/src/favicon.ico",
+              "apps/sutro-themes/src/_redirects",
               "apps/sutro-themes/src/assets"
             ],
             "styles": ["apps/sutro-themes/src/styles.scss"],
@@ -303,6 +305,7 @@
             "aot": true,
             "assets": [
               "apps/sutro-analytics/src/favicon.ico",
+              "apps/sutro-analytics/src/_redirects",
               "apps/sutro-analytics/src/assets"
             ],
             "styles": ["apps/sutro-analytics/src/styles.scss"],

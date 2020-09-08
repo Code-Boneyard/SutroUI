@@ -4,7 +4,7 @@
         {
             "name": "Chainable",
             "id": "interface-Chainable-ea23acd80fc8c355d0a7601f33ba03ca",
-            "file": "apps/sutro-ui-e2e/src/support/commands.ts",
+            "file": "apps/sutro-themes-e2e/src/support/commands.ts",
             "type": "interface",
             "sourceCode": "declare namespace Cypress {\n  interface Chainable<Subject> {\n    login(email: string, password: string): void;\n  }\n}\n//\n// -- This is a parent command --\nCypress.Commands.add('login', (email, password) => {\n  console.log('Custom command example: Login', email, password);\n});\n//\n// -- This is a child command --\n// Cypress.Commands.add(\"drag\", { prevSubject: 'element'}, (subject, options) => { ... })\n//\n//\n// -- This is a dual command --\n// Cypress.Commands.add(\"dismiss\", { prevSubject: 'optional'}, (subject, options) => { ... })\n//\n//\n// -- This will overwrite an existing command --\n// Cypress.Commands.overwrite(\"visit\", (originalFn, url, options) => { ... })\n",
             "properties": [],
@@ -45,6 +45,102 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Chainable",
+            "id": "interface-Chainable-ea23acd80fc8c355d0a7601f33ba03ca-1",
+            "file": "apps/sutro-analytics-e2e/src/support/commands.ts",
+            "type": "interface",
+            "sourceCode": "declare namespace Cypress {\n  interface Chainable<Subject> {\n    login(email: string, password: string): void;\n  }\n}\n//\n// -- This is a parent command --\nCypress.Commands.add('login', (email, password) => {\n  console.log('Custom command example: Login', email, password);\n});\n//\n// -- This is a child command --\n// Cypress.Commands.add(\"drag\", { prevSubject: 'element'}, (subject, options) => { ... })\n//\n//\n// -- This is a dual command --\n// Cypress.Commands.add(\"dismiss\", { prevSubject: 'optional'}, (subject, options) => { ... })\n//\n//\n// -- This will overwrite an existing command --\n// Cypress.Commands.overwrite(\"visit\", (originalFn, url, options) => { ... })\n",
+            "properties": [],
+            "indexSignatures": [],
+            "kind": 152,
+            "methods": [
+                {
+                    "name": "login",
+                    "args": [
+                        {
+                            "name": "email",
+                            "type": "string"
+                        },
+                        {
+                            "name": "password",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 13,
+                    "jsdoctags": [
+                        {
+                            "name": "email",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "password",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "Chainable-1"
+        },
+        {
+            "name": "Chainable",
+            "id": "interface-Chainable-ea23acd80fc8c355d0a7601f33ba03ca-2",
+            "file": "apps/sutro-ui-e2e/src/support/commands.ts",
+            "type": "interface",
+            "sourceCode": "declare namespace Cypress {\n  interface Chainable<Subject> {\n    login(email: string, password: string): void;\n  }\n}\n//\n// -- This is a parent command --\nCypress.Commands.add('login', (email, password) => {\n  console.log('Custom command example: Login', email, password);\n});\n//\n// -- This is a child command --\n// Cypress.Commands.add(\"drag\", { prevSubject: 'element'}, (subject, options) => { ... })\n//\n//\n// -- This is a dual command --\n// Cypress.Commands.add(\"dismiss\", { prevSubject: 'optional'}, (subject, options) => { ... })\n//\n//\n// -- This will overwrite an existing command --\n// Cypress.Commands.overwrite(\"visit\", (originalFn, url, options) => { ... })\n",
+            "properties": [],
+            "indexSignatures": [],
+            "kind": 152,
+            "methods": [
+                {
+                    "name": "login",
+                    "args": [
+                        {
+                            "name": "email",
+                            "type": "string"
+                        },
+                        {
+                            "name": "password",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 13,
+                    "jsdoctags": [
+                        {
+                            "name": "email",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "password",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "isDuplicate": true,
+            "duplicateId": 2,
+            "duplicateName": "Chainable-2"
         },
         {
             "name": "Comment",
@@ -909,7 +1005,104 @@
         },
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-9410bf65d5c31fe7034f01a0bcbada74",
+            "id": "component-AppComponent-4ec26ab6a91dfe85dc737dab0d7a5de4",
+            "file": "apps/sutro-analytics/src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "sutro-ui-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'sutro-analytics'",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'sutro-ui-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss'],\n})\nexport class AppComponent {\n  title = 'sutro-analytics';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "/*\n * Remove template code below\n */\n:host {\n  display: block;\n  font-family: sans-serif;\n  min-width: 300px;\n  max-width: 600px;\n  margin: 50px auto;\n}\n\n.gutter-left {\n  margin-left: 9px;\n}\n\n.col-span-2 {\n  grid-column: span 2;\n}\n\n.flex {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\nheader {\n  background-color: #143055;\n  color: white;\n  padding: 5px;\n  border-radius: 3px;\n}\n\nmain {\n  padding: 0 36px;\n}\n\np {\n  text-align: center;\n}\n\nh1 {\n  text-align: center;\n  margin-left: 18px;\n  font-size: 24px;\n}\n\nh2 {\n  text-align: center;\n  font-size: 20px;\n  margin: 40px 0 10px 0;\n}\n\n.resources {\n  text-align: center;\n  list-style: none;\n  padding: 0;\n  display: grid;\n  grid-gap: 9px;\n  grid-template-columns: 1fr 1fr;\n}\n\n.resource {\n  color: #0094ba;\n  height: 36px;\n  background-color: rgba(0, 0, 0, 0);\n  border: 1px solid rgba(0, 0, 0, 0.12);\n  border-radius: 4px;\n  padding: 3px 9px;\n  text-decoration: none;\n}\n\n.resource:hover {\n  background-color: rgba(68, 138, 255, 0.04);\n}\n\npre {\n  padding: 9px;\n  border-radius: 4px;\n  background-color: black;\n  color: #eee;\n}\n\ndetails {\n  border-radius: 4px;\n  color: #333;\n  background-color: rgba(0, 0, 0, 0);\n  border: 1px solid rgba(0, 0, 0, 0.12);\n  padding: 3px 9px;\n  margin-bottom: 9px;\n}\n\nsummary {\n  cursor: pointer;\n  outline: none;\n  height: 36px;\n  line-height: 36px;\n}\n\n.github-star-container {\n  margin-top: 12px;\n  line-height: 20px;\n}\n\n.github-star-container a {\n  display: flex;\n  align-items: center;\n  text-decoration: none;\n  color: #333;\n}\n\n.github-star-badge {\n  color: #24292e;\n  display: flex;\n  align-items: center;\n  font-size: 12px;\n  padding: 3px 10px;\n  border: 1px solid rgba(27, 31, 35, 0.2);\n  border-radius: 3px;\n  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);\n  margin-left: 4px;\n  font-weight: 600;\n}\n\n.github-star-badge:hover {\n  background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);\n  border-color: rgba(27, 31, 35, 0.35);\n  background-position: -0.5em;\n}\n.github-star-badge .material-icons {\n  height: 16px;\n  width: 16px;\n  margin-right: 4px;\n}\n",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<header class=\"flex\">\n  <img\n    alt=\"Nx logo\"\n    width=\"75\"\n    src=\"https://nx.dev/assets/images/nx-logo-white.svg\"\n  />\n  <h1>Welcome to {{ title }}!</h1>\n</header>\n<main>\n  <h2>Resources &amp; Tools</h2>\n  <p>\n    Thank you for using and showing some ♥ for Nx.\n  </p>\n  <div class=\"flex github-star-container\">\n    <a\n      href=\"https://github.com/nrwl/nx\"\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n    >\n      If you like Nx, please give it a star:\n      <div class=\"github-star-badge\">\n        <svg\n          class=\"material-icons\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          width=\"24\"\n          height=\"24\"\n          viewBox=\"0 0 24 24\"\n        >\n          <path d=\"M0 0h24v24H0z\" fill=\"none\" />\n          <path\n            d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"\n          />\n        </svg>\n        Star\n      </div>\n    </a>\n  </div>\n  <p>\n    Here are some links to help you get started.\n  </p>\n  <ul class=\"resources\">\n    <li class=\"col-span-2\">\n      <a\n        class=\"resource flex\"\n        href=\"https://connect.nrwl.io/app/courses/nx-workspaces/intro\"\n      >\n        Nx video course\n      </a>\n    </li>\n    <li class=\"col-span-2\">\n      <a\n        class=\"resource flex\"\n        href=\"https://nx.dev/angular/getting-started/what-is-nx\"\n      >\n        Nx video tutorial\n      </a>\n    </li>\n    <li class=\"col-span-2\">\n      <a\n        class=\"resource flex\"\n        href=\"https://nx.dev/angular/tutorial/01-create-application\"\n      >\n        Interactive tutorial\n      </a>\n    </li>\n    <li class=\"col-span-2\">\n      <a class=\"resource flex\" href=\"https://nx.app/\">\n        <svg\n          width=\"36\"\n          height=\"36\"\n          viewBox=\"0 0 120 120\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <path\n            d=\"M120 15V30C103.44 30 90 43.44 90 60C90 76.56 76.56 90 60 90C43.44 90 30 103.44 30 120H15C6.72 120 0 113.28 0 105V15C0 6.72 6.72 0 15 0H105C113.28 0 120 6.72 120 15Z\"\n            fill=\"#0E2039\"\n          />\n          <path\n            d=\"M120 30V105C120 113.28 113.28 120 105 120H30C30 103.44 43.44 90 60 90C76.56 90 90 76.56 90 60C90 43.44 103.44 30 120 30Z\"\n            fill=\"white\"\n          />\n        </svg>\n        <span class=\"gutter-left\">Nx Cloud</span>\n      </a>\n    </li>\n  </ul>\n  <h2>Next Steps</h2>\n  <p>Here are some things you can do with Nx.</p>\n  <details open>\n    <summary>Add UI library</summary>\n    <pre>\n# Generate UI lib\nng g @nrwl/angular:lib ui\n\n# Add a component\nng g @nrwl/angular:component xyz --project ui</pre\n    >\n  </details>\n  <details>\n    <summary>View dependency graph</summary>\n    <pre>nx dep-graph</pre>\n  </details>\n  <details>\n    <summary>Run affected commands</summary>\n    <pre>\n# see what's been affected by changes\nng affected:dep-graph\n\n# run tests for current changes\nng affected:test\n\n# run e2e tests for current changes\nng affected:e2e\n</pre\n    >\n  </details>\n</main>\n\n<router-outlet></router-outlet>\n"
+        },
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-0b79cc9b9f3885b21229c811b3d340ab-1",
+            "file": "apps/sutro-themes/src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "sutro-ui-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'sutro-themes'",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'sutro-ui-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss'],\n})\nexport class AppComponent {\n  title = 'sutro-themes';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "/*\n * Remove template code below\n */\n:host {\n  display: block;\n  font-family: sans-serif;\n  min-width: 300px;\n  max-width: 600px;\n  margin: 50px auto;\n}\n\n.gutter-left {\n  margin-left: 9px;\n}\n\n.col-span-2 {\n  grid-column: span 2;\n}\n\n.flex {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\nheader {\n  background-color: #143055;\n  color: white;\n  padding: 5px;\n  border-radius: 3px;\n}\n\nmain {\n  padding: 0 36px;\n}\n\np {\n  text-align: center;\n}\n\nh1 {\n  text-align: center;\n  margin-left: 18px;\n  font-size: 24px;\n}\n\nh2 {\n  text-align: center;\n  font-size: 20px;\n  margin: 40px 0 10px 0;\n}\n\n.resources {\n  text-align: center;\n  list-style: none;\n  padding: 0;\n  display: grid;\n  grid-gap: 9px;\n  grid-template-columns: 1fr 1fr;\n}\n\n.resource {\n  color: #0094ba;\n  height: 36px;\n  background-color: rgba(0, 0, 0, 0);\n  border: 1px solid rgba(0, 0, 0, 0.12);\n  border-radius: 4px;\n  padding: 3px 9px;\n  text-decoration: none;\n}\n\n.resource:hover {\n  background-color: rgba(68, 138, 255, 0.04);\n}\n\npre {\n  padding: 9px;\n  border-radius: 4px;\n  background-color: black;\n  color: #eee;\n}\n\ndetails {\n  border-radius: 4px;\n  color: #333;\n  background-color: rgba(0, 0, 0, 0);\n  border: 1px solid rgba(0, 0, 0, 0.12);\n  padding: 3px 9px;\n  margin-bottom: 9px;\n}\n\nsummary {\n  cursor: pointer;\n  outline: none;\n  height: 36px;\n  line-height: 36px;\n}\n\n.github-star-container {\n  margin-top: 12px;\n  line-height: 20px;\n}\n\n.github-star-container a {\n  display: flex;\n  align-items: center;\n  text-decoration: none;\n  color: #333;\n}\n\n.github-star-badge {\n  color: #24292e;\n  display: flex;\n  align-items: center;\n  font-size: 12px;\n  padding: 3px 10px;\n  border: 1px solid rgba(27, 31, 35, 0.2);\n  border-radius: 3px;\n  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);\n  margin-left: 4px;\n  font-weight: 600;\n}\n\n.github-star-badge:hover {\n  background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);\n  border-color: rgba(27, 31, 35, 0.35);\n  background-position: -0.5em;\n}\n.github-star-badge .material-icons {\n  height: 16px;\n  width: 16px;\n  margin-right: 4px;\n}\n",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "AppComponent-1",
+            "templateData": "<header class=\"flex\">\n  <img\n    alt=\"Nx logo\"\n    width=\"75\"\n    src=\"https://nx.dev/assets/images/nx-logo-white.svg\"\n  />\n  <h1>Welcome to {{ title }}!</h1>\n</header>\n<main>\n  <h2>Resources &amp; Tools</h2>\n  <p>\n    Thank you for using and showing some ♥ for Nx.\n  </p>\n  <div class=\"flex github-star-container\">\n    <a\n      href=\"https://github.com/nrwl/nx\"\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n    >\n      If you like Nx, please give it a star:\n      <div class=\"github-star-badge\">\n        <svg\n          class=\"material-icons\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n          width=\"24\"\n          height=\"24\"\n          viewBox=\"0 0 24 24\"\n        >\n          <path d=\"M0 0h24v24H0z\" fill=\"none\" />\n          <path\n            d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"\n          />\n        </svg>\n        Star\n      </div>\n    </a>\n  </div>\n  <p>\n    Here are some links to help you get started.\n  </p>\n  <ul class=\"resources\">\n    <li class=\"col-span-2\">\n      <a\n        class=\"resource flex\"\n        href=\"https://connect.nrwl.io/app/courses/nx-workspaces/intro\"\n      >\n        Nx video course\n      </a>\n    </li>\n    <li class=\"col-span-2\">\n      <a\n        class=\"resource flex\"\n        href=\"https://nx.dev/angular/getting-started/what-is-nx\"\n      >\n        Nx video tutorial\n      </a>\n    </li>\n    <li class=\"col-span-2\">\n      <a\n        class=\"resource flex\"\n        href=\"https://nx.dev/angular/tutorial/01-create-application\"\n      >\n        Interactive tutorial\n      </a>\n    </li>\n    <li class=\"col-span-2\">\n      <a class=\"resource flex\" href=\"https://nx.app/\">\n        <svg\n          width=\"36\"\n          height=\"36\"\n          viewBox=\"0 0 120 120\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <path\n            d=\"M120 15V30C103.44 30 90 43.44 90 60C90 76.56 76.56 90 60 90C43.44 90 30 103.44 30 120H15C6.72 120 0 113.28 0 105V15C0 6.72 6.72 0 15 0H105C113.28 0 120 6.72 120 15Z\"\n            fill=\"#0E2039\"\n          />\n          <path\n            d=\"M120 30V105C120 113.28 113.28 120 105 120H30C30 103.44 43.44 90 60 90C76.56 90 90 76.56 90 60C90 43.44 103.44 30 120 30Z\"\n            fill=\"white\"\n          />\n        </svg>\n        <span class=\"gutter-left\">Nx Cloud</span>\n      </a>\n    </li>\n  </ul>\n  <h2>Next Steps</h2>\n  <p>Here are some things you can do with Nx.</p>\n  <details open>\n    <summary>Add UI library</summary>\n    <pre>\n# Generate UI lib\nng g @nrwl/angular:lib ui\n\n# Add a component\nng g @nrwl/angular:component xyz --project ui</pre\n    >\n  </details>\n  <details>\n    <summary>View dependency graph</summary>\n    <pre>nx dep-graph</pre>\n  </details>\n  <details>\n    <summary>Run affected commands</summary>\n    <pre>\n# see what's been affected by changes\nng affected:dep-graph\n\n# run tests for current changes\nng affected:test\n\n# run e2e tests for current changes\nng affected:e2e\n</pre\n    >\n  </details>\n</main>\n\n<router-outlet></router-outlet>\n"
+        },
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-9410bf65d5c31fe7034f01a0bcbada74-2",
             "file": "apps/sutro-ui/src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -945,6 +1138,9 @@
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
+            "isDuplicate": true,
+            "duplicateId": 2,
+            "duplicateName": "AppComponent-2",
             "templateData": "<div class=\"app-navbar\">\r\n  <mat-nav-list fxLayout=\"row\">\r\n    <mat-list-item routerLink=\"docs\">\r\n      <h1>\r\n        Sutro UI\r\n      </h1>\r\n    </mat-list-item>\r\n    <mat-list-item routerLink=\"\">QUICK START</mat-list-item>\r\n    <mat-list-item routerLink=\"docs\">DOCS</mat-list-item>\r\n    <mat-list-item routerLink=\"\">RELEASE NOTES</mat-list-item>\r\n  </mat-nav-list>\r\n</div>\r\nCloud Firestore-Powered Angular UI Components for Modern Applications\r\n<router-outlet></router-outlet>\r\n\r\n<app-footer></app-footer>\r\n"
         },
         {
@@ -2795,6 +2991,80 @@
                     "elements": [
                         {
                             "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
                         },
                         {
                             "name": "FooterComponent"
@@ -4337,6 +4607,38 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "apps/sutro-analytics/src/environments/environment.prod.ts",
+                "type": "object",
+                "defaultValue": "{\n  production: true,\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "apps/sutro-analytics/src/environments/environment.ts",
+                "type": "object",
+                "defaultValue": "{\n  production: false,\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "apps/sutro-themes/src/environments/environment.prod.ts",
+                "type": "object",
+                "defaultValue": "{\n  production: true,\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "apps/sutro-themes/src/environments/environment.ts",
+                "type": "object",
+                "defaultValue": "{\n  production: false,\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "apps/sutro-ui/src/environments/environment.prod.ts",
                 "type": "object",
                 "defaultValue": "{\r\n  production: true\r\n}"
@@ -4412,6 +4714,22 @@
                 "file": "libs/sutro/src/lib/shared/vendors/carousel.animations.ts",
                 "type": "",
                 "defaultValue": "animation([\r\n  // just hide it\r\n])"
+            },
+            {
+                "name": "getGreeting",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "apps/sutro-themes-e2e/src/support/app.po.ts",
+                "type": "",
+                "defaultValue": "() => cy.get('h1')"
+            },
+            {
+                "name": "getGreeting",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "apps/sutro-analytics-e2e/src/support/app.po.ts",
+                "type": "",
+                "defaultValue": "() => cy.get('h1')"
             },
             {
                 "name": "getGreeting",
@@ -4670,6 +4988,46 @@
                     "type": "literal type"
                 }
             ],
+            "apps/sutro-analytics/src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "apps/sutro-analytics/src/environments/environment.prod.ts",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true,\n}"
+                }
+            ],
+            "apps/sutro-analytics/src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "apps/sutro-analytics/src/environments/environment.ts",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false,\n}"
+                }
+            ],
+            "apps/sutro-themes/src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "apps/sutro-themes/src/environments/environment.prod.ts",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true,\n}"
+                }
+            ],
+            "apps/sutro-themes/src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "apps/sutro-themes/src/environments/environment.ts",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false,\n}"
+                }
+            ],
             "apps/sutro-ui/src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
@@ -4820,6 +5178,26 @@
                     "file": "libs/sutro/src/lib/shared/vendors/carousel.animations.ts",
                     "type": "",
                     "defaultValue": "animation([\r\n  animate(\r\n    \"{{time}} cubic-bezier(0.785, 0.135, 0.15, 0.86)\",\r\n    style({ opacity: 0, transform: \"scale(0.5)\" })\r\n  )\r\n])"
+                }
+            ],
+            "apps/sutro-themes-e2e/src/support/app.po.ts": [
+                {
+                    "name": "getGreeting",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "apps/sutro-themes-e2e/src/support/app.po.ts",
+                    "type": "",
+                    "defaultValue": "() => cy.get('h1')"
+                }
+            ],
+            "apps/sutro-analytics-e2e/src/support/app.po.ts": [
+                {
+                    "name": "getGreeting",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "apps/sutro-analytics-e2e/src/support/app.po.ts",
+                    "type": "",
+                    "defaultValue": "() => cy.get('h1')"
                 }
             ],
             "apps/sutro-ui-e2e/src/support/app.po.ts": [
@@ -5154,9 +5532,105 @@
         ]
     },
     "coverage": {
-        "count": 1,
+        "count": 0,
         "status": "low",
         "files": [
+            {
+                "filePath": "apps/sutro-analytics-e2e/src/support/app.po.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "getGreeting",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "apps/sutro-analytics-e2e/src/support/commands.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Chainable",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "apps/sutro-analytics/src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "apps/sutro-analytics/src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "apps/sutro-analytics/src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "apps/sutro-themes-e2e/src/support/app.po.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "getGreeting",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "apps/sutro-themes-e2e/src/support/commands.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Chainable",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "apps/sutro-themes/src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "apps/sutro-themes/src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "apps/sutro-themes/src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
             {
                 "filePath": "apps/sutro-ui-e2e/src/support/app.po.ts",
                 "type": "variable",
