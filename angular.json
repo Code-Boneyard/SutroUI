@@ -32,12 +32,10 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "apps/sutro-ui/src/environments/environment.ts",
-                  "with": "apps/sutro-ui/src/environments/environment.prod.ts"
-                }
-              ],
+              "fileReplacements": [{
+                "replace": "apps/sutro-ui/src/environments/environment.ts",
+                "with": "apps/sutro-ui/src/environments/environment.prod.ts"
+              }],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -46,8 +44,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [
-                {
+              "budgets": [{
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
@@ -85,10 +82,7 @@
               "apps/sutro-ui/tsconfig.app.json",
               "apps/sutro-ui/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/sutro-ui/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/sutro-ui/**/*"]
           }
         },
         "test": {
@@ -123,13 +117,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/sutro-ui-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/sutro-ui-e2e/**/*"
-            ]
+            "tsConfig": ["apps/sutro-ui-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/sutro-ui-e2e/**/*"]
           }
         }
       }
@@ -147,10 +136,7 @@
               "libs/sutro/tsconfig.lib.json",
               "libs/sutro/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/sutro/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/sutro/**/*"]
           }
         },
         "test": {
@@ -168,6 +154,7 @@
           "style": "scss"
         }
       }
+
     }
   },
   "cli": {
