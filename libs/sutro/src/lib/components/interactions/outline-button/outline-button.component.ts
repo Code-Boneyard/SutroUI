@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'sutro-ui-outline-button',
+  selector: 'sutro-outline-button',
   templateUrl: './outline-button.component.html',
   styleUrls: ['./outline-button.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush

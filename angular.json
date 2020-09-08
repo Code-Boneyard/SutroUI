@@ -138,7 +138,7 @@
       "projectType": "library",
       "root": "libs/sutro",
       "sourceRoot": "libs/sutro/src",
-      "prefix": "sutro-ui",
+      "prefix": "sutro",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
