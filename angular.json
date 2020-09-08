@@ -32,10 +32,12 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [{
-                "replace": "apps/sutro-ui/src/environments/environment.ts",
-                "with": "apps/sutro-ui/src/environments/environment.prod.ts"
-              }],
+              "fileReplacements": [
+                {
+                  "replace": "apps/sutro-ui/src/environments/environment.ts",
+                  "with": "apps/sutro-ui/src/environments/environment.prod.ts"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -44,7 +46,8 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [{
+              "budgets": [
+                {
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
@@ -154,7 +157,252 @@
           "style": "scss"
         }
       }
-
+    },
+    "sutro-themes": {
+      "projectType": "application",
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "apps/sutro-themes",
+      "sourceRoot": "apps/sutro-themes/src",
+      "prefix": "sutro-ui",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/sutro-themes",
+            "index": "apps/sutro-themes/src/index.html",
+            "main": "apps/sutro-themes/src/main.ts",
+            "polyfills": "apps/sutro-themes/src/polyfills.ts",
+            "tsConfig": "apps/sutro-themes/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/sutro-themes/src/favicon.ico",
+              "apps/sutro-themes/src/assets"
+            ],
+            "styles": ["apps/sutro-themes/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/sutro-themes/src/environments/environment.ts",
+                  "with": "apps/sutro-themes/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "sutro-themes:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "sutro-themes:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "sutro-themes:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/sutro-themes/tsconfig.app.json",
+              "apps/sutro-themes/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/sutro-themes/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/sutro-themes/jest.config.js",
+            "tsConfig": "apps/sutro-themes/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "apps/sutro-themes/src/test-setup.ts"
+          }
+        }
+      }
+    },
+    "sutro-themes-e2e": {
+      "root": "apps/sutro-themes-e2e",
+      "sourceRoot": "apps/sutro-themes-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/sutro-themes-e2e/cypress.json",
+            "tsConfig": "apps/sutro-themes-e2e/tsconfig.e2e.json",
+            "devServerTarget": "sutro-themes:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "sutro-themes:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/sutro-themes-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/sutro-themes-e2e/**/*"]
+          }
+        }
+      }
+    },
+    "sutro-analytics": {
+      "projectType": "application",
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "apps/sutro-analytics",
+      "sourceRoot": "apps/sutro-analytics/src",
+      "prefix": "sutro-ui",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/sutro-analytics",
+            "index": "apps/sutro-analytics/src/index.html",
+            "main": "apps/sutro-analytics/src/main.ts",
+            "polyfills": "apps/sutro-analytics/src/polyfills.ts",
+            "tsConfig": "apps/sutro-analytics/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/sutro-analytics/src/favicon.ico",
+              "apps/sutro-analytics/src/assets"
+            ],
+            "styles": ["apps/sutro-analytics/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/sutro-analytics/src/environments/environment.ts",
+                  "with": "apps/sutro-analytics/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "sutro-analytics:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "sutro-analytics:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "sutro-analytics:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/sutro-analytics/tsconfig.app.json",
+              "apps/sutro-analytics/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/sutro-analytics/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/sutro-analytics/jest.config.js",
+            "tsConfig": "apps/sutro-analytics/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "apps/sutro-analytics/src/test-setup.ts"
+          }
+        }
+      }
+    },
+    "sutro-analytics-e2e": {
+      "root": "apps/sutro-analytics-e2e",
+      "sourceRoot": "apps/sutro-analytics-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/sutro-analytics-e2e/cypress.json",
+            "tsConfig": "apps/sutro-analytics-e2e/tsconfig.e2e.json",
+            "devServerTarget": "sutro-analytics:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "sutro-analytics:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/sutro-analytics-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/sutro-analytics-e2e/**/*"]
+          }
+        }
+      }
     }
   },
   "cli": {

@@ -35,12 +35,19 @@
     "sutro": {
       "tags": []
     },
-    "storybook": {
+    "sutro-themes": {
       "tags": []
     },
-    "storybook-e2e": {
+    "sutro-themes-e2e": {
       "tags": [],
-      "implicitDependencies": ["storybook"]
+      "implicitDependencies": ["sutro-themes"]
+    },
+    "sutro-analytics": {
+      "tags": []
+    },
+    "sutro-analytics-e2e": {
+      "tags": [],
+      "implicitDependencies": ["sutro-analytics"]
     }
   }
 }
