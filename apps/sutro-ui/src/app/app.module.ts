@@ -15,7 +15,6 @@ import { GuidelinesModule } from './design/guidelines/guidelines.module';
 import { ComponentsModule } from './components/components.module';
 import { RecipesModule } from './recipes/recipes.module';
 import { PlanningModule } from './design/planning/planning.module';
-import { ProductListModule } from '@bit/sutro.angular-tutorial.product-list';
 
 @NgModule({
   declarations: [

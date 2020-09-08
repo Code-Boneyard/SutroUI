@@ -32,9 +32,6 @@
       "tags": [],
       "implicitDependencies": ["sutro-ui"]
     },
-    "sutro": {
-      "tags": []
-    },
     "sutro-themes": {
       "tags": []
     },
@@ -48,6 +45,13 @@
     "sutro-analytics-e2e": {
       "tags": [],
       "implicitDependencies": ["sutro-analytics"]
+    },
+    "sutro-bit": {
+      "tags": ["bit"]
+    },
+    "sutro-bit-e2e": {
+      "tags": [],
+      "implicitDependencies": ["sutro-bit"]
     }
   }
 }

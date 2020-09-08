@@ -6,6 +6,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import * as echarts from 'echarts';
 import { NgxEchartsModule } from 'ngx-echarts';
 
+import { ProductListModule } from '@bit/sutro.angular-tutorial.product-list';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -16,7 +18,6 @@ import { NgxEchartsModule } from 'ngx-echarts';
     NgxEchartsModule.forRoot({
       echarts,
     }),
-
   ],
   declarations: [
 
