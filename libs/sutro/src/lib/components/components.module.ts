@@ -10,11 +10,15 @@ import { DialogsModule } from './dialogs/dialogs.module';
 import { TablesModule } from './tables/tables.module';
 import { SharedModule } from '../shared/shared.module';
 import { FiltersModule } from './filters/filters.module';
+import { CardsModule } from './cards/cards.module';
+import { ShapesModule } from './shapes/shapes.module';
+import { DividerComponent } from './divider/divider.component';
+import { FormsModule } from './forms/forms.module';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [DividerComponent],
   imports: [
     CommonModule,
     SharedModule,
@@ -26,7 +30,10 @@ import { FiltersModule } from './filters/filters.module';
     GridsModule,
     DialogsModule,
     TablesModule,
-    FiltersModule
+    FiltersModule,
+    CardsModule,
+    ShapesModule,
+    FormsModule
   ]
 })
 export class ComponentsModule { }

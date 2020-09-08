@@ -6,6 +6,8 @@ import { PageLayoutComponent } from './page-layout/page-layout.component';
 import { SessionsLayoutComponent } from './sessions-layout/sessions-layout.component';
 import { ModalLayoutComponent } from './modal-layout/modal-layout.component';
 import { SharedModule } from './../shared/shared.module';
+import { PagesModule } from './pages/pages.module';
+import { GridsModule } from './grids/grids.module';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { SharedModule } from './../shared/shared.module';
     PageLayoutComponent, SessionsLayoutComponent, ModalLayoutComponent],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    PagesModule,
+    GridsModule
   ]
 })
 export class LayoutsModule { }

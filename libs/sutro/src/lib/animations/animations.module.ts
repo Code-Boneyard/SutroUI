@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MenusModule } from '../components/nav/menus/menus.module';
+import { RipplesComponent } from './ripples/ripples.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [RipplesComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    MenusModule
   ]
 })
 export class AnimationsModule { }
