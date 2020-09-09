@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PageLayoutModule } from './page-layout/page-layout.module';
+import { PageLayoutComponent } from './page-layout/page-layout.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     CommonModule,
-    PageLayoutModule
   ]
 })
 export class LayoutsModule { }

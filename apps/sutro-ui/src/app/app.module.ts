@@ -1,5 +1,6 @@
+
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule , CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,17 +16,21 @@ import { GuidelinesModule } from './design/guidelines/guidelines.module';
 import { ComponentsModule } from './components/components.module';
 import { RecipesModule } from './recipes/recipes.module';
 import { PlanningModule } from './design/planning/planning.module';
+import { PageLayoutModule } from 'libs/sutro/src/lib/layouts/page-layout/page-layout.module';
+import { SutroModule } from './../../../../libs/sutro/src/lib/sutro.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    PageLayoutModule,
     SharedModule,
+    SutroModule,
     DocsModule,
     DesignModule,
     ReleasesModule,
@@ -40,6 +45,7 @@ import { PlanningModule } from './design/planning/planning.module';
   providers: [
 
   ],
+  exports: [],
   bootstrap: [
     AppComponent
   ]
