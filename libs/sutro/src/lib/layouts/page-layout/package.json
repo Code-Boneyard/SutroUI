@@ -1,9 +1,0 @@
-{
-  "es2015": "fesm2015/bit-sutro.layouts.page-layout.js",
-  "esm5": "esm5/bit-sutro.layouts.page-layout.js",
-  "esm2015": "esm2015/bit-sutro.layouts.page-layout.js",
-  "fesm5": "fesm5/bit-sutro.layouts.page-layout.js",
-  "fesm2015": "fesm2015/bit-sutro.layouts.page-layout.js",
-  "module": "fesm5/bit-sutro.layouts.page-layout.js",
-  "typings": "bit-sutro.layouts.page-layout.d.ts"
-}
