@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
   declarations: [],
   imports: [
     CommonModule,
-    
   ]
 })
-export class ComponentsModule { }
+export class ManagementModule { }
