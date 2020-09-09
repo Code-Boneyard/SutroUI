@@ -33,10 +33,12 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [{
-                "replace": "apps/sutro-ui/src/environments/environment.ts",
-                "with": "apps/sutro-ui/src/environments/environment.prod.ts"
-              }],
+              "fileReplacements": [
+                {
+                  "replace": "apps/sutro-ui/src/environments/environment.ts",
+                  "with": "apps/sutro-ui/src/environments/environment.prod.ts"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -45,7 +47,8 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [{
+              "budgets": [
+                {
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
@@ -154,10 +157,12 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [{
-                "replace": "apps/sutro-themes/src/environments/environment.ts",
-                "with": "apps/sutro-themes/src/environments/environment.prod.ts"
-              }],
+              "fileReplacements": [
+                {
+                  "replace": "apps/sutro-themes/src/environments/environment.ts",
+                  "with": "apps/sutro-themes/src/environments/environment.prod.ts"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -166,7 +171,8 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [{
+              "budgets": [
+                {
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
@@ -275,10 +281,12 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [{
-                "replace": "apps/sutro-analytics/src/environments/environment.ts",
-                "with": "apps/sutro-analytics/src/environments/environment.prod.ts"
-              }],
+              "fileReplacements": [
+                {
+                  "replace": "apps/sutro-analytics/src/environments/environment.ts",
+                  "with": "apps/sutro-analytics/src/environments/environment.prod.ts"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -287,7 +295,8 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "budgets": [{
+              "budgets": [
+                {
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
@@ -363,6 +372,50 @@
             "tsConfig": ["apps/sutro-analytics-e2e/tsconfig.e2e.json"],
             "exclude": ["**/node_modules/**", "!apps/sutro-analytics-e2e/**/*"]
           }
+        }
+      }
+    },
+    "sutro": {
+      "projectType": "library",
+      "root": "libs/sutro",
+      "sourceRoot": "libs/sutro/src",
+      "prefix": "sutro-ui",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/sutro/tsconfig.lib.json",
+            "project": "libs/sutro/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/sutro/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/sutro/tsconfig.lib.json",
+              "libs/sutro/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/sutro/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/sutro/jest.config.js",
+            "tsConfig": "libs/sutro/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/sutro/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
         }
       }
     }

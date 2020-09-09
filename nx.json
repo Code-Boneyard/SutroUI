@@ -45,6 +45,9 @@
     "sutro-analytics-e2e": {
       "tags": [],
       "implicitDependencies": ["sutro-analytics"]
+    },
+    "sutro": {
+      "tags": []
     }
   }
 }
